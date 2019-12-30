@@ -1,0 +1,108 @@
+<html>
+    <head>
+           
+    </head>
+<body>
+    <script>
+     
+   var name = prompt("Enter Your Name");
+   var dobDate = prompt("Enter You Date of Birth");
+   var dobMonth = prompt ("Enter Your Month Of Birth");
+   var dobYear = prompt ("Enter Your Year of Birth");
+
+   var date2 = new Date();
+    //console.log(date2);
+
+    
+    var g = date2.getHours();
+    //console.log(g);
+        if (g<=5){
+      msg = "Good Night";
+        }
+        else if (g<=11){
+          msg = "Good Morning";
+        }
+        else if (g<=16){
+          msg = "Good Afternoon";
+        }
+        else if (g<=21) {
+          msg = "Good Night"
+        }
+        console.log("Hello "+ name +", "+ msg);
+   var d = (dobYear+" "+dobMonth+" "+dobDate);
+   
+   var date1 = new Date(d);
+   date1.setHours(14);
+   date1.setMinutes(30);
+   date1.setSeconds(42);
+  
+ console.log("Your Date Of Birth: ",date1);
+
+   
+
+
+
+
+   var birthYearDiff = date2.getYear() - date1.getYear();
+   var birthMonthDiff = date2.getMonth() - date1.getMonth();
+   var birthDateDiff = date2.getDate() - date1.getDate();
+   var birthHoursDiff = date1.getHours() - date2.getHours();
+   var birthMinutesDiff = date1.getMinutes() - date2.getMinutes();
+   var birthSecondsDiff = date1.getSeconds() - date2.getSeconds();
+
+  /* console.log("Years Diff :"+birthYearDiff);
+  console.log("Months Diff :"+birthMonthDiff);
+  console.log("Days Diff :"+birthDateDiff);
+  console.log("Hours Diff :"+birthHoursDiff);
+  console.log("Minutes Diff :"+birthMinutesDiff);
+  console.log("Seconds Diff :"+birthSecondsDiff); */
+     
+  console.log("You are "+birthYearDiff+" Years "+birthMonthDiff+" Months "+birthDateDiff+" Days "+birthHoursDiff+" Hours "+birthMinutesDiff+" Minutes "+birthSecondsDiff+" Seconds old ")
+ 
+            var timeDiff = date2.getTime() - date1.getTime();
+           // console.log("TimeDiff ", timeDiff);
+
+            var timeInDay = 24 * 60 * 60 * 1000;
+            //console.log("TimeinDay ", timeInDay);
+
+            var daysDiff1 = timeDiff / timeInDay;
+            var daysDiff2 = Math.round(daysDiff1);
+            console.log("Your Age in Days: ",daysDiff2);
+
+            var date3 = new Date ("Feb 13 2020 14:30:42");
+            //console.log(date3);
+           /* var birthDateDiff2 = date3.getDate() - date2.getDate();
+            var birthHoursDiff2 = date3.getHours() - date2.getHours();
+            var birthMinutesDiff2 = date3.getMinutes() - date2.getMinutes();
+            var birthSecondsDiff2 = date3.getSeconds() - date2.getSeconds(); */
+
+
+           /*console.log("Days Diff :"+birthDateDiff2);
+            console.log("Hours Diff :"+birthHoursDiff2);
+            console.log("Minutes Diff :"+birthMinutesDiff2);
+            console.log("Seconds Diff :"+birthSecondsDiff2); */
+
+            var timeDiff = date3.getTime() - date2.getTime();
+           // console.log("TimeDiff ", timeDiff);
+
+            var hoursDiff = date3.getHours() - date2.getHours();
+            //console.log("HoursDiff ", hoursDiff);
+
+            var secDiff = date3.getSeconds() - date2.getSeconds();
+           //console.log("SecondsDiff ", secDiff);
+
+            var minDiff = date3.getMinutes() - date2.getMinutes();
+           // console.log("MinutesDiff ", minDiff);
+
+            var timeInDay = 24 * 60 * 60 * 1000;
+           // console.log("TimeinDay ", timeInDay);
+
+            var daysDiff3 = timeDiff / timeInDay;
+            var daysDiff4 = Math.round(daysDiff3);
+           //console.log("daysDiff ",daysDiff4);
+
+            console.log("How much time left in your next birthday?\n"+daysDiff4+" Days "+hoursDiff+" hours "+minDiff+" minutes "+secDiff+" seconds left. ");
+
+  </script>
+</body>
+</html>

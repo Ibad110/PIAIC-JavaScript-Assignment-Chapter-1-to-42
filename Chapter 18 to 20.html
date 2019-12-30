@@ -1,0 +1,32 @@
+<html>
+    <head>
+           
+    </head>
+<body>
+    <script>
+        var subjects = [];
+
+        for (i = 1; i<6; i++) {
+            var subject1 = prompt("Subject "+i);
+            subjects.push(subject1);
+        }
+        
+        
+        console.log("Subject: "+subjects);
+
+
+        for ( j = 1; j < 6; j++) {
+         
+         var subject2 = prompt("Subject : "+j+" Subject Value Edit"); 
+            
+                subjects.splice(j,1,subject2);
+        //splice m thora masla hai nh ban pa rha baqi ok hai
+      }
+     
+
+      console.log("After Edit subject: "+subjects);
+     
+
+    </script>
+</body>
+</html>

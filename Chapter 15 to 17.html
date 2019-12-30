@@ -1,0 +1,42 @@
+<html>
+    <head>
+           
+    </head>
+<body>
+    <script>
+     var subjects = [];
+     var subject1 = prompt("Subject 1:","Enter Your 1st Subject");
+     var subject2 = prompt("Subject 2:","Enter Your 2nd Subject");
+     var subject3 = prompt("Subject 3:","Enter Your 3rd Subject");
+     var subject4 = prompt("Subject 4:","Enter Your 4th Subject");
+     var subject5 = prompt("Subject 5:","Enter Your 5th Subject");
+
+     subjects.push(subject1,subject2,subject3,subject4,subject5);
+     document.write("Subjects: "+subjects);
+
+     var subject11 = prompt("Subject 1:","courseValueEdit"); 
+     var arr = subjects.splice(0,1,subject11);
+     
+
+     var subject22 = prompt("Subject 2:","courseValueEdit"); 
+     var arr = subjects.splice(1,2,subject22);                      
+     
+
+     var subject33 = prompt("Subject 3:","courseValueEdit"); 
+     var arr = subjects.splice(2,3,subject33);
+     
+
+     var subject44 = prompt("Subject 4:","courseValueEdit"); 
+     var arr = subjects.splice(3,4,subject44);
+     
+
+     var subject55 = prompt("Subject 5:","courseValueEdit"); 
+     var arr = subjects.splice(4,5,subject55);
+
+     document.write("<br> After Edit: "+subjects);
+    
+  
+     
+    </script>
+</body>
+</html>
